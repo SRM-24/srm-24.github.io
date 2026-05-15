@@ -45,3 +45,8 @@ address {
     padding-top: 1em;
     border-top: thin dotted;
 }
+
+object.view_pdf {
+    height: 700px;
+    width:100%;
+}
