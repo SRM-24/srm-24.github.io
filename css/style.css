@@ -6,6 +6,24 @@ body {
     background-color: whitesmoke;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.logo_home img {    
+    height: 120px;
+    width: auto;
+    display: block;
+}
+
+h1 {
+    font-family: Helvetica, Geneva, Arial, sans-serif;
+    font-size: 4em;
+    margin: 0;
+}
+
 nav ul {
     font-family: Helvetica, Arial, sans-serif;
     padding: 0;
@@ -20,19 +38,15 @@ nav ul li {
     margin-right: 40px;
 }
 
-a {
+a.nav:link {
     text-decoration: none;
     color: rgb(122, 122, 122);
 }
 
-a:hover {
+a.nav:link:hover {
     text-decoration: underline;
 }
 
-h1 {
-    font-family: Helvetica, Geneva, Arial, sans-serif;
-    font-size: 4em;
-}
 
 p {
     font-size: 1.2em;
