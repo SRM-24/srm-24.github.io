@@ -9,11 +9,20 @@
 
 <body>
     <header>
-    <a class="logo_home" href="./index.html">
-        <img src="./images/logo6.svg">
-    </a>
+<a class="logo_home" href="index.html">
+    <img 
+        id="logo" 
+        src="images/logo6.svg" 
+        data-light="images/logo6.svg"
+        data-dark="images/logo7.svg"
+        alt="Logo">
+</a>
 
     <h1>¡Bienvenido!</h1>
+
+    <button class="button" onclick="myFunction()" id="mybutton">Activar modo oscuro</button>
+
+    <script src="./scripts/scripts.js"></script>
 
     </header>
 
@@ -25,7 +34,8 @@
         </ul>
     </nav>
 
-    <p>Soy <b>Martí Otal López</b>.</p>
+    <p>Soy <b>Martí Otal López</b>. Esta es mi página web personal.</p>
+    <p>WIP</p>
 
 
 </body>
