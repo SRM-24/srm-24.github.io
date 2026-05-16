@@ -6,10 +6,20 @@ body {
     background-color: whitesmoke;
 }
 
+.dark-mode {
+  background-color: #222;
+  color: #ffffff;
+
+}
+
+.button {
+    margin-left: auto;
+}
+
 header {
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 15px;
 }
 
 .logo_home img {    
@@ -27,10 +37,17 @@ h1 {
 nav ul {
     font-family: Helvetica, Arial, sans-serif;
     padding: 0;
+    padding-top: 15px;
     padding-bottom: 15px;
     list-style: none;
     font-weight: bold;
+    border-top: 1px solid #d5d5d5;    
     border-bottom: 1px solid #d5d5d5;    
+}
+
+.dark-mode nav ul {
+    border-top-color: #555;
+    border-bottom-color: #555;
 }
 
 nav ul li {
@@ -38,13 +55,18 @@ nav ul li {
     margin-right: 40px;
 }
 
-a.nav:link {
+a.nav_link:link {
     text-decoration: none;
     color: rgb(122, 122, 122);
 }
 
-a.nav:link:hover {
+a.nav_link:hover {
     text-decoration: underline;
+}
+
+.dark-mode a.nav_link:link,
+.dark-mode a.nav_link:visited {
+    color: #c58af9;
 }
 
 
@@ -52,6 +74,10 @@ p {
     font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
+}
+
+.dark-mode p {
+    color: #ffffff;
 }
 
 address {
