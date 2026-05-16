@@ -9,12 +9,23 @@
 
 	<body>
 		<header>
-    <a class="logo_home" href="../index.html">
-        <img src="../images/logo6.svg">
-    </a>
+			
+<a class="logo_home" href="../index.html">
+    <img 
+        id="logo" 
+        src="../images/logo6.svg" 
+        data-light="../images/logo6.svg"
+        data-dark="../images/logo7.svg"
+        alt="Logo">
+</a>
     <h1>Mi <em>curriculum vitae</em></h1>
 
-    </header>
+    <button class="button" onclick="myFunction()" id="mybutton">Activar modo oscuro</button>
+
+    <script src="../scripts/scripts.js"></script>
+
+
+    	</header>
 		<nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -22,7 +33,7 @@
             <li><a href="../pages/CV.html">CV</a></li>
         </ul>
     	</nav>
-		<object class="view_pdf" data="../objects/document.pdf" type="application/pdf"></object>
+		<object class="view_pdf" data="../objects/template.pdf" type="application/pdf"></object>
 
 
 	</body>
