@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
-    <meta charset="utf-8">
-    <title>Martí Otal</title>
-    <link rel="icon" type="image/svg+xml" href="./images/logo7.svg">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página personal de Martí Otal López: perfil, proyectos, CV y contacto.">
+  <meta name="theme-color" content="#2563eb">
+  <title>Martí Otal López | Página personal</title>
+  <link rel="icon" type="image/svg+xml" href="./images/logo7.svg">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./scripts/scripts.js" defer></script>
 </head>
-
 <body>
-    <header>
-<a class="logo_home" href="index.html">
-    <img 
-        id="logo" 
-        src="images/logo6.svg" 
-        data-light="images/logo6.svg"
-        data-dark="images/logo7.svg"
-        alt="Logo">
-</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <h1>¡Bienvenido!</h1>
+  <header class="site-header">
+    <a class="logo-home" href="./index.html" aria-label="Ir al inicio">
+      <img
+        id="logo"
+        src="./images/logo6.svg"
+        data-light="./images/logo6.svg"
+        data-dark="./images/logo7.svg"
+        alt="Logo de Martí Otal">
+    </a>
 
-    <button class="button" onclick="myFunction()" id="mybutton">Activar modo oscuro</button>
-
-    <script src="./scripts/scripts.js"></script>
-
-    </header>
-
-    <nav>
-        <ul>
-            <li><a class="nav_link" href="./index.html">Inicio</a></li>
-            <li><a class="nav_link" href="./pages/about_me.html">Sobre mí</a></li>
-            <li><a class="nav_link" href="./pages/CV.html">CV</a></li>
-        </ul>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+        <li><a class="nav-link" href="./pages/about_me.html">Sobre mí</a></li>
+        <li><a class="nav-link" href="./pages/CV.html">CV</a></li>
+      </ul>
     </nav>
 
-    <p>Soy <b>Martí Otal López</b>. Esta es mi página web personal.</p> 
-    <p>WIP</p>
+    <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
+      Activar modo oscuro
+    </button>
+  </header>
 
+  <main id="contenido">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <p class="eyebrow">Página personal</p>
+      <h1 id="titulo-principal">Hola, soy Martí Otal López.</h1>
+      <p class="hero-text">
+        Bienvenido a mi espacio personal. Aquí puedes conocer quién soy, ver mi CV
+        y seguir la evolución de mis proyectos académicos y profesionales.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="./pages/about_me.html">Conocerme mejor</a>
+        <a class="button secondary" href="./pages/CV.html">Ver CV</a>
+      </div>
+    </section>
 
+    <section class="card-grid" aria-label="Secciones destacadas">
+      <article class="card">
+        <h2>Sobre mí</h2>
+        <p>
+          Una presentación breve y clara para explicar tus intereses, formación y objetivos.
+        </p>
+        <a class="text-link" href="./pages/about_me.html">Leer más</a>
+      </article>
+
+      <article class="card">
+        <h2>CV</h2>
+        <p>
+          Tu experiencia, educación, habilidades y enlaces relevantes en un formato fácil de leer.
+        </p>
+        <a class="text-link" href="./pages/CV.html">Abrir CV</a>
+      </article>
+
+      <article class="card">
+        <h2>Proyectos</h2>
+        <p>
+          Añade aquí trabajos, prácticas, repositorios o proyectos personales que quieras mostrar.
+        </p>
+        <a class="text-link" href="https://github.com/SRM-24" rel="noopener">GitHub</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> Martí Otal López</p>
+  </footer>
 </body>
 </html>
